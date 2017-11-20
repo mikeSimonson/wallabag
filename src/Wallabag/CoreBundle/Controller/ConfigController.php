@@ -437,7 +437,7 @@ class ConfigController extends Controller
      */
     public function setLocaleAction(Request $request, $language = null)
     {
-        if ($language != null) {
+        if ($language !== null) {
             $this->get('session')->set('_locale', $language);
         }
 
